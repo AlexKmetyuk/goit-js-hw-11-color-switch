@@ -18,7 +18,7 @@ const randomIntegerFromInterval = (min, max) => {
 let switchColorTimer = null;
 
 startBtn.addEventListener('click', () => {
-    switchColorTimer = setInterval(() => { body.style.backgroundColor = colors[randomIntegerFromInterval(0, 5)] }, 1000)
+    switchColorTimer = setInterval(() => { body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length)] }, 1000)
     startBtn.setAttribute('disabled','disabled')
 })
 
